@@ -2,7 +2,7 @@
 user=$1
 password=$2
 
-curl --header "Content-Type: application/json" --request POST --data '{"deviceDesc": {"rulesetIDs": "57c8e0e9-dbf9-314a-b985-ea431ec6b6f6","password":"'"$2"'","username":"'"$1"'"},"key":"master"}' https://safe-basin-01006.herokuapp.com/api/device_valid >Master_init_resp.html
+curl --header "Content-Type: application/json" --request POST --data '{"deviceDesc": {"rulesetIDs": "57c8e0e9-dbf9-314a-b985-ea431ec6b6f6","password":"'"$2"'","username":"'"$1"'"},"key":"master"}' http://127.0.0.1:8000/api/device_valid >Master_init_resp.html
 
  > config.cfg
  > config2.cfg
