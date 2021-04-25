@@ -7,7 +7,7 @@
  $pass=$_POST['password'];
 
  $old_path=getcwd();
- chdir('MS');
+ chdir('https://github.com/LexerAnn-code/basestationTowerOnline/tree/main/MS');
 $output=shell_exec("sh initial.sh $name $pass");
 chdir($old_path);
 $resp = json_decode($output);
