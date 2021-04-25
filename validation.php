@@ -5,9 +5,8 @@
 
  $name=$_POST['user'];
  $pass=$_POST['password'];
-
  $old_path=getcwd();
- chdir('MS');
+chdir('MS');
 $output=shell_exec("sh initial.sh $name $pass");
 chdir($old_path);
 $resp = json_decode($output);
@@ -19,7 +18,7 @@ if ($pos === false) {
 
 	echo "Validation failed.";
 	echo "$old_path";
- echo "$output";
+ echo "$resp->isValid";
  echo "$w";
 
   
