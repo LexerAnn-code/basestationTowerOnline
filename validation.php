@@ -18,7 +18,7 @@ $pos = strpos($w, "True");
 if ($pos === false) {
 
 	echo "Validation failed.";
-	echo "ewe";
+	echo "$old_path";
  echo "$output";
  echo "$w";
 
