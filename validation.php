@@ -18,6 +18,7 @@ $pos = strpos($w, "True");
 if ($pos === false) {
 
 	echo "Validation failed.";
+	echo "ewe"
  echo "$output";
  echo "$w";
 
