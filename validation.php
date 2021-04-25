@@ -7,9 +7,9 @@
  $pass=$_POST['password'];
 
  $old_path=getcwd();
- chdir('https://github.com/LexerAnn-code/basestationTowerOnline/tree/main/MS');
+ chdir('MS');
 $output=shell_exec("sh initial.sh $name $pass");
-chdir('https://github.com/LexerAnn-code/basestationTowerOnline/blob/main/validation.php');
+chdir($old_path);
 $resp = json_decode($output);
 $w =  $resp->isValid;
 
